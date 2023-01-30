@@ -52,5 +52,19 @@ $   ./puclient/simplewallet
 ```
 Note: sawtooth key generation has to be done for all clients
 The transactions list should be given in "batches.txt" file in pyclient folder.
+**Important:** Running Insurance Transaction Family
 
+Install javascript in sawtooth docker using the command "apt install -y nodejs" in the local command bash after the sawtooth validator is up.
 
+To start the insurance transaction family processor:
+	a. Open sawtooth local command bash.
+	b. navigate to "Ins_processor/insuance-handler" folder using command "cd Ins_processor/insuance-handler"
+	c. Run "node Processor.js" commnad to start the insurance transaction family processor.
+	d. Check the log of sawtooth validator to see if the transaction processor is registered with the validator.
+	
+	
+To submit transaction to the validator:
+	a. The batches.txt file in Ins_client is the input for transactions.
+	b. Enter each transaction command in a new line in the above file.
+	c. open sawtooth local command bash and navigate to Ins_client folder.
+	
