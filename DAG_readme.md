@@ -68,7 +68,11 @@ d. Check the log of sawtooth validator to see if the transaction processor is re
 	
 	
 To submit transaction to the validator:
-	a. The batches.txt file in Ins_client is the input for transactions.
-	b. Enter each transaction command in a new line in the above file.
-	c. open sawtooth local command bash and navigate to Ins_client folder.
+
+a. The batches.txt file in Ins_client is the input for transactions.
+
+b. Enter each transaction command in a new line in the above file.
+
+c. open sawtooth local command bash and navigate to Ins_client folder.
 	
+**Important:** The time taken for execution of each block are recorded in the location "Enhanced-sawtooth/validator/DAG/execution-time.txt"
