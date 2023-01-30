@@ -1,4 +1,4 @@
-**Important:**  Details of the specific package versions that work with Sawtooth 1.2.6
+**Important:**  **Details of the specific package versions that work with Sawtooth 1.2.6**
 
 Ubuntu :18.04
 docker:  20.10.7
@@ -15,7 +15,7 @@ $ sudo g++ -c -fPIC DAG_module.cpp -pthread
 $ sudo g++ -shared -Wl,-soname,libgeek.so  -o libgeek.so  DAG_module.o
 ```
 
-**Important:** Chainging sawtooth serial to parallel can be done by:
+**Important:** **Chainging sawtooth serial to parallel can be done by:**
 
 Line 106 in sawtooth-DAG/docker-compose.yaml file
 
@@ -25,7 +25,7 @@ For Parallel scedular:
 For serial scedular:
     sawtooth-validator --scheduler serial -vv 
 
-**Important:** Chainging sawtooth treescheduler to DAG scheduer:
+**Important:** **Chainging sawtooth treescheduler to DAG scheduer:**
 
 location: Sawtooth-DAG/validator/sawtooth_validator/execution
 
@@ -35,7 +35,7 @@ scheduler_parallel_2: tree scheduler
 
 **Rename the desired scheduler as scheduler_parallel
 
-**Important:** Using Simplewalle transaction family:
+**Important:** **Using Simplewalle transaction family:**
 
 setting up transaction processor:
 ```bash
@@ -52,11 +52,11 @@ $   ./puclient/simplewallet
 ```
 Note: sawtooth key generation has to be done for all clients
 The transactions list should be given in "batches.txt" file in pyclient folder.
-**Important:** Running Insurance Transaction Family
+**Important:** **Running Insurance Transaction Family**
 
 Install javascript in sawtooth docker using the command "apt install -y nodejs" in the local command bash after the sawtooth validator is up.
 
-To start the insurance transaction family processor:
+**To start the insurance transaction family processor:**
 
 a. Open sawtooth local command bash.
 
@@ -67,7 +67,7 @@ c. Run "node Processor.js" commnad to start the insurance transaction family pro
 d. Check the log of sawtooth validator to see if the transaction processor is registered with the validator.
 	
 	
-To submit transaction to the validator:
+**To submit transaction to the validator:**
 
 a. The batches.txt file in Ins_client is the input for transactions.
 
