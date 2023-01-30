@@ -48,7 +48,7 @@ setting up client:
 ```bash
 $   docker exec -it sawtooth-shell-local bash
 $   sawtooth keygen client1
-$   ./puclient/simplewallet
+$   ./pyclient/simplewallet
 ```
 Note: sawtooth key generation has to be done for all clients
 The transactions list should be given in "batches.txt" file in pyclient folder.
@@ -62,9 +62,11 @@ a. Open sawtooth local command bash.
 
 b. navigate to "Ins_processor/insuance-handler" folder using command "cd Ins_processor/insuance-handler"
 
-c. Run "node Processor.js" commnad to start the insurance transaction family processor.
+c. apt install nodejs
 
-d. Check the log of sawtooth validator to see if the transaction processor is registered with the validator.
+d. Run "node Processor.js" commnad to start the insurance transaction family processor.
+
+e. Check the log of sawtooth validator to see if the transaction processor is registered with the validator.
 	
 	
 **To submit transaction to the validator:**
