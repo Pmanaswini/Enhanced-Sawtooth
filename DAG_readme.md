@@ -35,7 +35,7 @@ scheduler_parallel_2: tree scheduler
 
 **Rename the desired scheduler as scheduler_parallel
 
-**Important:** **Using Simplewalle transaction family:**
+**Important:** **Using Simplewallet transaction family:**
 
 setting up transaction processor:
 ```bash
