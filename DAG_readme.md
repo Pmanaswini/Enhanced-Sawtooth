@@ -25,7 +25,7 @@ For Parallel scedular:
 For serial scedular:
     sawtooth-validator --scheduler serial -vv 
 
-**Important:** **Chainging sawtooth treescheduler to DAG scheduer:**
+**Important:** **Chainging sawtooth tree scheduler to DAG scheduer:**
 
 location: Sawtooth-DAG/validator/sawtooth_validator/execution
 
@@ -74,5 +74,37 @@ a. The batches.txt file in Ins_client is the input for transactions.
 b. Enter each transaction command in a new line in the above file.
 
 c. open sawtooth local command bash and navigate to Ins_client folder.
-	
+
+**Important:** **Using Voting transaction family:**
+
+setting up transaction processor:
+```bash
+$   docker exec -it sawtooth-shell-local bash
+$   python3 ./voting_tp/tp.py
+```
+
+
+setting up client:
+```bash
+$   docker exec -it sawtooth-shell-local bash
+$   python ./voting_client/vote.py
+```
+The transactions list should be given in "batches.txt" file in voting_client folder.
+
+**Important:** **Using Intkey transaction family:**
+
+setting up transaction processor:
+```bash
+$   docker exec -it sawtooth-shell-local bash
+$   python3 ./intkey_processor/main.py
+```
+
+
+setting up client:
+```bash
+$   docker exec -it sawtooth-shell-local bash
+$   python ./intkey_client/intkey_cli.py
+```	
+The transactions list should be given in "batches.txt" file in intkey_client folder.
+
 **Important:** The time taken for execution of each block are recorded in the location "Enhanced-sawtooth/validator/DAG/execution-time.txt"
