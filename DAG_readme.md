@@ -54,8 +54,6 @@ Note: sawtooth key generation has to be done for all clients
 The transactions list should be given in "batches.txt" file in pyclient folder.
 **Important:** **Running Insurance Transaction Family**
 
-Install javascript in sawtooth docker using the command "apt install -y nodejs" in the local command bash after the sawtooth validator is up.
-
 **To start the insurance transaction family processor:**
 
 a. Open sawtooth local command bash.
